@@ -6,7 +6,8 @@ const { body, validationResult } = require('express-validator');
 app.use(cors())
 app.use(express.json());
 
-const port = process.env.PORT;
+require('dotenv').config()
+const PORT = process.env.PORT || 3001
 
 app.get("/getImageLink", (req,res) =>{
     res.status(200).json({imageUrl : "https://drive.google.com/uc?export=view&id=1dmtW4Rxx8aHNL2DxlXkxNnOONOiYhRO9"});
@@ -30,6 +31,15 @@ app.post(
     }
 )
 
-app.listen(port, () => {
-    console.log("Server started on port ", port);
+if(process.env.NODE_ENV === 'production'){
+        app.use(express.static('client/build'))
+        app.get('*', (req,res) =>{
+                res.sendFile(path.resolve(__dirname, 'client' , 'build', 'index.html'))
+        })
+}
+
+
+
+app.listen(PORT, () =>{
+        console.log(`Server is listening on port ${PORT}`);
 })
