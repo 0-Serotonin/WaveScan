@@ -16,7 +16,7 @@ app.get("/getImageLink", (req,res) =>{
 
 app.post(
     "/validateForm", 
-    body("projectName").isLength({min: 3}),
+    body("projectName").isAlpha().isLength({min: 3}),
     body("scanningMode").isIn(["GANTRY", "CRAWLER", "AUTO", "MANUAL", "ARM"]),
     body("scanDimensionX").isInt({min: 1}),
     body("scanDimensionY").isInt({min: 1}),
