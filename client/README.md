@@ -4,4 +4,4 @@ To run the app:
 2. open another terminal and cd out of client
 3. npm start to start the backend server
 
-4. or visit https://wavescan.herokuapp.com
+4. or visit https://wavescan.herokuapp.com/
