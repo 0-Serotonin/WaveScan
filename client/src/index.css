@@ -33,7 +33,7 @@ code {
 
 .dimension-block {
   display: flex;
-  padding-left: 45px;
+  padding-left: 48px;
 }
 
 .dimension-input {
@@ -45,7 +45,7 @@ code {
 }
 
 .dimension-label{
-  padding-left: 2px !important;
+  padding-left: 1px !important;
 }
 
 .forum {
@@ -79,16 +79,16 @@ code {
   background-color: white;
   padding-left: 5px;
   margin-right: 40px;
+  border-color:white;
 }
 
 .forum select {
-  width: 215px;
+  width: 213px;
   height: 30px;
   border-radius: 30px;
   background-color: white;
   padding-left: 5px;
   margin-right: 40px;
-
 }
 .forum button{
   margin: 0 auto;
@@ -102,5 +102,6 @@ code {
   cursor: pointer;
   margin-right: 40px;
   color: white;
+  border-color:rgba(94, 170, 241, 0.747);
 }
 
