@@ -2,6 +2,7 @@ const express = require("express");
 const app = express();
 const cors = require("cors");
 const { body, validationResult } = require('express-validator');
+const path = require('path');
 
 app.use(cors())
 app.use(express.json());
