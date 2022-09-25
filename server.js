@@ -6,6 +6,8 @@ const { body, validationResult } = require('express-validator');
 app.use(cors())
 app.use(express.json());
 
+const port = process.env.PORT;
+
 app.get("/getImageLink", (req,res) =>{
     res.status(200).json({imageUrl : "https://drive.google.com/uc?export=view&id=1dmtW4Rxx8aHNL2DxlXkxNnOONOiYhRO9"});
 })
@@ -28,6 +30,6 @@ app.post(
     }
 )
 
-app.listen(3001, () => {
-    console.log("Server started on port 3001");
+app.listen(port, () => {
+    console.log("Server started on port ", port);
 })
