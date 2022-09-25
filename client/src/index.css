@@ -59,8 +59,8 @@ code {
   text-align: center;
   border-radius: 20px;
   padding-left: 20px;
-  background: rgb(189, 189, 189);
   background: linear-gradient(90deg, rgba(189, 189, 189, 1) 7%, rgba(102, 102, 102, 1) 50%, rgba(189, 189, 189, 1) 100%);
+  background-clip: padding-box;
 }
 
 .forum label {
@@ -79,7 +79,7 @@ code {
   background-color: white;
   padding-left: 5px;
   margin-right: 40px;
-  border-color:white;
+  border: 0px;
 }
 
 .forum select {
@@ -102,6 +102,6 @@ code {
   cursor: pointer;
   margin-right: 40px;
   color: white;
-  border-color:rgba(94, 170, 241, 0.747);
+  border: 0px;
 }
 
