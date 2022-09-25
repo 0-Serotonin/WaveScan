@@ -39,9 +39,9 @@ code {
 .dimension-input {
   margin-left: 5px;
   max-width: 70px;
-  margin-top: 5px;
+  margin-top: 8px;
   text-align: center;
-  margin-right: 20px !important;
+  margin-right: 27px !important;
 }
 
 .dimension-label{
@@ -88,7 +88,7 @@ code {
   border-radius: 30px;
   background-color: white;
   padding-left: 5px;
-  margin-right: 40px;
+  margin-right: 43px;
 }
 .forum button{
   margin: 0 auto;
